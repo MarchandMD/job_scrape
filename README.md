@@ -164,8 +164,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-
-no license has been added at thistime
+MIT license
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
