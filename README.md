@@ -30,26 +30,23 @@
 <br />
 <div align="center">
 
-  <h1 align="center">War (or peace)</h1>
+  <h1 align="center">Scraping Jobs with Ruby</h1>
 
   <p align="center">
-    A game I've built as part of the Turing School of Software and Design curiculum!
+    Building a tool to scrape job boards for desirable jobs, and consolidating the data into GoogleSheets
     <br />
-    <a href="https://github.com/marchandmd/job_scrape"><strong>Explore the docs »</strong></a>
+    <img src="spy_glass.jpg"  width="60%" height="20%">
     <br />
     <br />
-    <a href="https://github.com/marchandmd/job_scrape">View Demo</a>
-    ·
     <a href="https://github.com/marchandmd/job_scrape/issues">Report Bug</a>
-    ·
+    |
     <a href="https://github.com/marchandmd/job_scrape/issues">Request Feature</a>
   </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
-<details>
   <summary>Table of Contents</summary>
-  <ol>
+  <ul>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
@@ -69,29 +66,27 @@
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+  </ul>
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-A take on the classic card game
+For a long time I've wanted to be able to scrape a web page, for various reasons.
 
-What did I learn building this:
+Now that I've successfully endured the rigorous 7-month immersive boot camp of [Turing School of Software and Design](https://turing.edu/), the time seems right to tackle this project and scrape job sites for positions that I actually want to apply for.
 
-- Principles of OOP
-- Git and github workflows
-- RSpec and TDD
+## What did I learn building this:
 
-
+-   Basic scripting structure in Ruby
+-   use of the Nokogiri gem
+-   exporting of results to a CSV file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
--   [![Ruby][ruby.com]][ruby-url]
--   [![Rspec][rspec.com]][rspec-url]
+[![Ruby][ruby.com]][ruby-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,7 +99,6 @@ What did I learn building this:
 n/a
 
 ### Installation
-
 
 1. Clone the repo
     ```sh
@@ -121,12 +115,28 @@ n/a
 
 ## Usage
 
-It's pretty straight-forward to use this. Once it's on your machine and you `cd` into the repo, in the commandline run
+This is where I need to be adding info; because I have no idea how to use this now. So let's see what I cna do here.
 
-```bs
-ruby job_scrape_runner.rb
-```
+So here's how I used this:
 
+1. copy the URL of a job site (This has been setup to use `https://www.linkedin.com`)
+2. With the terminal/command line currently in the `job_scrape/` directory, run `ruby job_scrape.rb https://www.linkedin.com
+3.
+
+
+And then what happens?
+
+It looks like the `searched_page.html` was updated/created.
+
+Yeah, I've also hard coded the target URL. so there's a lot of work still to be done here.
+
+I'm not necessarily building test first, and I don't really want to build test first, I just want to build it debugger first.
+
+so why has this ARGV ever been so challenging to me? It's literally just the argument passed. So, this would be super easy.
+
+This totally gives me an awesome jump off point to really start building this from the ground up.
+
+I might be able to....could I add a string?
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,10 +144,8 @@ ruby job_scrape_runner.rb
 
 ## Roadmap
 
-- README
-- [x] Add back to top links
-- [ ] images and/or video
-- [ ] code snippets
+- [ ] ReadMe: clean up the `Usage` section
+
 
 See the [open issues](https://github.com/marchandmd/job_scrape/issues) for a full list of proposed features (and known issues).
 
@@ -210,7 +218,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [product-screenshot]: images/screenshot.png
 [bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [bootstrap-url]: https://getbootstrap.com
-[ruby.com]: https://img.shields.io/badge/ruby-v2.7.4-red
+[ruby.com]: https://img.shields.io/badge/v2.7.4-Ruby-red?style=for-the-badge&logo=ruby
 [ruby-url]: https://ruby-doc.org/core-2.7.2/
 [rspec.com]: https://img.shields.io/badge/rspec-v3.10-success
 [rspec-url]: https://rspec.info/documentation/
