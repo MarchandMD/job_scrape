@@ -72,15 +72,13 @@
 
 ## About The Project
 
-For a long time I've wanted to be able to scrape a web page, for various reasons.
-
-Now that I've successfully endured the rigorous 7-month immersive boot camp of [Turing School of Software and Design](https://turing.edu/), the time seems right to tackle this project and scrape job sites for positions that I actually want to apply for.
+Basic job scraper to retrieve Ruby jobs from Dice.com
 
 ## What did I learn building this:
 
 -   Basic scripting structure in Ruby
--   use of the Nokogiri gem
--   exporting of results to a CSV file
+-   use of the Mechanize and Nokogiri gem
+-   exporting of results to Google Sheets
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,6 +95,10 @@ Now that I've successfully endured the rigorous 7-month immersive boot camp of [
 ### Prerequisites
 
 n/a
+- Ruby 2.7.4
+- mechanize gem
+- google_drive
+- nokogiri (may be redundant, as mechanize is built atop nokogiri)
 
 ### Installation
 
@@ -115,28 +117,8 @@ n/a
 
 ## Usage
 
-This is where I need to be adding info; because I have no idea how to use this now. So let's see what I cna do here.
-
-So here's how I used this:
-
-1. copy the URL of a job site (This has been setup to use `https://www.linkedin.com`)
-2. With the terminal/command line currently in the `job_scrape/` directory, run `ruby job_scrape.rb https://www.linkedin.com
-3.
-
-
-And then what happens?
-
-It looks like the `searched_page.html` was updated/created.
-
-Yeah, I've also hard coded the target URL. so there's a lot of work still to be done here.
-
-I'm not necessarily building test first, and I don't really want to build test first, I just want to build it debugger first.
-
-so why has this ARGV ever been so challenging to me? It's literally just the argument passed. So, this would be super easy.
-
-This totally gives me an awesome jump off point to really start building this from the ground up.
-
-I might be able to....could I add a string?
+1. The majority of this project is supported by [this video](https://www.youtube.com/watch?v=VqoSUSy011I)
+2. This project is specific to Dice.com and `Ruby` jobs.... there's also the ability to scrape LinkedIn
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,7 +126,9 @@ I might be able to....could I add a string?
 
 ## Roadmap
 
-- [ ] ReadMe: clean up the `Usage` section
+- [x] ReadMe: clean up the `Usage` section
+- [ ] Expand to additional websites to scrape
+- [ ] Refine the filtering of positions to target descriptions
 
 
 See the [open issues](https://github.com/marchandmd/job_scrape/issues) for a full list of proposed features (and known issues).
